@@ -1,8 +1,12 @@
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "strconv"
+)
 
 func main() {
+
     fmt.Println("Hello!");
     fmt.Println("World!");
 
@@ -20,5 +24,15 @@ func main() {
         fmt.Println("val1 >= 10")
     } else {
         fmt.Println("val1 < 10")
+    }
+    
+    for i := 1; i <= 10; i++ {
+        
+        if i % 2 == 0 {
+            // 文字列に直す必要ある
+            fmt.Println(strconv.Itoa(i) + "は偶数")
+        } else {
+            fmt.Println(strconv.Itoa(i) + "は奇数")
+        }
     }
 }
