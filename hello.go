@@ -10,5 +10,15 @@ func main() {
 
     val1 = 12
 
-    fmt.Println(val1 + 2)
+    
+    val1 += 10
+    // val1 -= 10
+
+    fmt.Println(val1)
+    
+    if val1 >= 10 {
+        fmt.Println("val1 >= 10")
+    } else {
+        fmt.Println("val1 < 10")
+    }
 }
